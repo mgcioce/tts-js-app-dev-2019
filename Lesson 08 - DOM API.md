@@ -89,13 +89,13 @@ links.forEach(function(link){
 
 ```
 
-Array methods like `forEach`, `map`, `reduce`, and so on, don't work. Luckily, its easy enough to convert a nodeList into an Array;
+Some Array methods like `map` and `reduce` don't work. Luckily, its easy enough to convert a nodeList into an Array;
 
 ```javascript
 const links = document.querySelectorAll('a');
 const arrayOfLinks = Array.from(links);
 ```
-
+[see NodeList documentation for more details](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)
 ## Traversing the DOM
 You can use the children, parent, nextElmentSibling, and previousElementSibling attributes to find nodes relative to a node you have. This is called "traversing the DOM".
 
